@@ -37,6 +37,13 @@
                                         @Html.Raw(Model.ShortDescription)
                                     </div>
                                 }
+                                @if (!String.IsNullOrEmpty(Model.Test))
+                                {
+                                    <div class="test-field mb-3">
+                                        <strong>@T("Products.Test"):</strong>
+                                        <div class="test-content">@Html.Raw(Model.Test)</div>
+                                    </div>
+                                }
                                 @await Component.InvokeAsync("Widget", new { widgetZone = "productdetails_quickview_overview_top", additionalData = Model.Id })
                                 <!--product reviews-->
                                 @if (Model.ProductReviewOverview.AllowCustomerReviews)
@@ -87,6 +94,12 @@
                                     <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false"><span class="d-none d-md-block">@T("Products.Reviews") (@Model.ProductReviewOverview.TotalReviews)</span><span class="mdi mdi-account-star d-md-none"></span></a>
                                 </li>
                             }
+                            @if (!String.IsNullOrEmpty(Model.Test))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" id="test-tab" data-toggle="tab" href="#test" role="tab" aria-controls="test" aria-selected="false"><span class="d-none d-md-block">@T("Products.Test")</span><span class="mdi mdi-test-tube d-md-none"></span></a>
+                                </li>
+                            }
                             @if (Model.AskQuestionOnProduct)
                             {
                                 <li class="nav-item">
@@ -113,6 +126,10 @@
                                 <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     @await Component.InvokeAsync("ProductReviews", new { productId = Model.Id })
                                 </div>
+                            }
+                            @if (!String.IsNullOrEmpty(Model.Test))
+                            {
+                                <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">@Html.Raw(Model.Test)</div>
                             }
                             @if (Model.AskQuestionOnProduct)
                             {

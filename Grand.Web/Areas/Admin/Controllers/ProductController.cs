@@ -234,6 +234,7 @@ namespace Grand.Web.Areas.Admin.Controllers
                 locale.Name = product.GetLocalized(x => x.Name, languageId, false, false);
                 locale.ShortDescription = product.GetLocalized(x => x.ShortDescription, languageId, false, false);
                 locale.FullDescription = product.GetLocalized(x => x.FullDescription, languageId, false, false);
+                locale.Test = product.GetLocalized(x => x.Test, languageId, false, false);
                 locale.MetaKeywords = product.GetLocalized(x => x.MetaKeywords, languageId, false, false);
                 locale.MetaDescription = product.GetLocalized(x => x.MetaDescription, languageId, false, false);
                 locale.MetaTitle = product.GetLocalized(x => x.MetaTitle, languageId, false, false);

@@ -1,4 +1,4 @@
-﻿using Grand.Framework.Localization;
+using Grand.Framework.Localization;
 using Grand.Framework.Mapping;
 using Grand.Core.ModelBinding;
 using Grand.Core.Models;
@@ -71,6 +71,9 @@ namespace Grand.Web.Areas.Admin.Models.Catalog
 
         [GrandResourceDisplayName("Admin.Catalog.Products.Fields.FullDescription")]
         public string FullDescription { get; set; }
+
+        [GrandResourceDisplayName("Admin.Catalog.Products.Fields.Test")]
+        public string Test { get; set; }
 
         [GrandResourceDisplayName("Admin.Catalog.Products.Fields.Flag")]
         public string Flag { get; set; }
@@ -1224,6 +1227,10 @@ namespace Grand.Web.Areas.Admin.Models.Catalog
         [GrandResourceDisplayName("Admin.Catalog.Products.Fields.FullDescription")]
 
         public string FullDescription { get; set; }
+
+        [GrandResourceDisplayName("Admin.Catalog.Products.Fields.Test")]
+
+        public string Test { get; set; }
 
         [GrandResourceDisplayName("Admin.Catalog.Products.Fields.MetaKeywords")]
 

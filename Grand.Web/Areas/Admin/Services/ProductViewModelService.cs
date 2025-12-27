@@ -849,6 +849,10 @@ namespace Grand.Web.Areas.Admin.Services
                 //also it improves performance
                 productModel.FullDescription = "";
 
+
+                //adding a new field
+                productModel.Test = "";
+
                 //picture
                 var defaultProductPicture = x.ProductPictures.FirstOrDefault();
                 if (defaultProductPicture == null)

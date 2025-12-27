@@ -1,4 +1,4 @@
-﻿using Grand.Domain.Catalog;
+using Grand.Domain.Catalog;
 using Grand.Domain.Orders;
 using Grand.Core.ModelBinding;
 using Grand.Core.Models;
@@ -40,6 +40,8 @@ namespace Grand.Web.Models.Catalog
         public string Name { get; set; }
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; }
+
+        public string Test { get; set; }
         public string MetaKeywords { get; set; }
         public string MetaDescription { get; set; }
         public string MetaTitle { get; set; }
@@ -229,6 +231,8 @@ namespace Grand.Web.Models.Catalog
             public string ProductAttributeId { get; set; }
             public string Name { get; set; }
             public string Description { get; set; }
+
+            public string Test { get; set; }
             public string TextPrompt { get; set; }
             public bool IsRequired { get; set; }
             /// <summary>
@@ -291,6 +295,7 @@ namespace Grand.Web.Models.Catalog
             public string Name { get; set; }
             public string SeName { get; set; }
             public string ShortDescription { get; set; }
+            public string Test { get; set; }
             public string Sku { get; set; }
             public string Mpn { get; set; }
             public string Gtin { get; set; }

@@ -71,6 +71,8 @@ namespace Grand.Domain.Catalog
         /// <summary>
         /// Gets or sets the admin comment
         /// </summary>
+
+        public string Test {get; set;}
         public string AdminComment { get; set; }
 
         /// <summary>

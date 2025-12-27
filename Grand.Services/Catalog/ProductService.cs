@@ -263,6 +263,7 @@ namespace Grand.Services.Catalog
                 .Set(x => x.DownloadId, product.DownloadId)
                 .Set(x => x.Flag, product.Flag)
                 .Set(x => x.FullDescription, product.FullDescription)
+                .Set(x => x.Test, product.Test)
                 .Set(x => x.GiftCardTypeId, product.GiftCardTypeId)
                 .Set(x => x.Gtin, product.Gtin)
                 .Set(x => x.HasSampleDownload, product.HasSampleDownload)
@@ -452,6 +453,7 @@ namespace Grand.Services.Catalog
         /// <param name="filteredSpecs">Filtered product specification identifiers</param>
         /// <param name="orderBy">Order by</param>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>
+        /// <
         /// <param name="overridePublished">
         /// null - process "Published" property according to "showHidden" parameter
         /// true - load only "Published" products
