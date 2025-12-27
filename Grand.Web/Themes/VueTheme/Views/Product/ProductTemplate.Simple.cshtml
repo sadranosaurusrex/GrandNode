@@ -96,6 +96,13 @@
                                 @Html.Raw(Model.ShortDescription)
                             </div>
                         }
+                        @if (!String.IsNullOrEmpty(Model.Test))
+                        {
+                            <div class="test-field generalMarginSupporter">
+                                <strong>@T("Products.Test"):</strong>
+                                <div class="test-content">@Html.Raw(Model.Test)</div>
+                            </div>
+                        }
                         <!--manufacturers-->
                         @if (Model.ProductManufacturers.Any())
                         {
@@ -234,6 +241,12 @@
                         {
                             <b-tab id="review-tab" title="@T("Products.Reviews")" :active="active ? true : false">
                                 @await Component.InvokeAsync("ProductReviews", new { productId = Model.Id })
+                            </b-tab>
+                        }
+                        @if (!String.IsNullOrEmpty(Model.Test))
+                        {
+                            <b-tab title="@T("Products.Test")">
+                                @Html.Raw(Model.Test)
                             </b-tab>
                         }
                         @if (Model.AskQuestionOnProduct)

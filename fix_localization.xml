@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add these entries to your defaultResources.grandres.xml file -->
+<LocaleResources>
+  <!-- For the product field "Test" in admin panel -->
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Test">
+    <Value>Test</Value>
+  </LocaleResource>
+  
+  <!-- For the public store display -->
+  <LocaleResource Name="Products.Test">
+    <Value>Test</Value>
+  </LocaleResource>
+</LocaleResources>

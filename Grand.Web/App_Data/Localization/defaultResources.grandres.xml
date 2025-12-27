@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Language Name="English">
   <LocaleResource Name="Account.AccountActivation">
     <Value>Account activation</Value>
@@ -3957,6 +3957,12 @@
   <LocaleResource Name="Admin.Catalog.Products.Fields.TaxCategory.Hint">
     <Value>The tax classification for this product. You can manage product tax classifications from Configuration : Tax : Tax Classes</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Test">
+    <Value>Test</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.Test.Hint">
+    <Value>The test field for the product.</Value>
+  </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.Unit">
     <Value>Unit</Value>
   </LocaleResource>
@@ -7617,7 +7623,7 @@
     <Value>SEO char conversion</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SeoCharConversion.Hint">
-    <Value>Provide the characters which should be converted when Convert non-western chars setting is enabled. Example: ą:a;ę:e;ó:o;ć:c;ł:l;ś:s;ź:z;ż:z</Value>
+    <Value>Provide the characters which should be converted when Convert non-western chars setting is enabled. Example: a:a;e:e;�:o;c:c;l:l;s:s;z:z;z:z</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SeoCharConversion.Note">
     <Value>NOTE: If you want to use SEO Char Conversion, don't forget to restart application to apply changes.</Value>
@@ -10965,40 +10971,40 @@
     <Value>Action type name</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.AddOrder">
-    <Value>Add order – Action type when customer add order with specified conditions.</Value>
+    <Value>Add order � Action type when customer add order with specified conditions.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.AddToCart">
-    <Value>Add to cart – Action type when customer add specified products to cart.</Value>
+    <Value>Add to cart � Action type when customer add specified products to cart.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.AllOfThem">
-    <Value>All of them – All of the conditions must be met.</Value>
+    <Value>All of them � All of the conditions must be met.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Banner">
-    <Value>Banner – Store automatically view banner which is assigned to a particular action.</Value>
+    <Value>Banner � Store automatically view banner which is assigned to a particular action.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Customerrole">
-    <Value>Assign to customer role – Store automatically assign customer to specified customer role.</Value>
+    <Value>Assign to customer role � Store automatically assign customer to specified customer role.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Customertag">
-    <Value>Assign to customer tag – Store automatically assign customer to specified customer tag. </Value>
+    <Value>Assign to customer tag � Store automatically assign customer to specified customer tag. </Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Email">
-    <Value>Email – Store automatically send email to customer, who made particular action.</Value>
+    <Value>Email � Store automatically send email to customer, who made particular action.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Customers.Actiontype.helptext.interactiveform">
-    <Value>Interactive form – Store automatically view form which is assigned to a particular action.</Value>
+    <Value>Interactive form � Store automatically view form which is assigned to a particular action.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.OneOfThem">
-    <Value>One of them – One of condition must be met.</Value>
+    <Value>One of them � One of condition must be met.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Registration">
     <Value>Customer Registration - Action type, when a new customer registers to our store.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Url">
-    <Value>URL – Action type when customer come to site from referral url.</Value>
+    <Value>URL � Action type when customer come to site from referral url.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.helpText.Viewed">
-    <Value>Viewed – Action type when customer view specified products, categories, manufacturers.</Value>
+    <Value>Viewed � Action type when customer view specified products, categories, manufacturers.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.actiontype.updated">
     <Value>Action type updated</Value>
@@ -11682,25 +11688,25 @@
     <Value>You must save it before edit</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text1">
-    <Value>Abandoned cart – You can set custom reminder to customers who left their carts without confirming order. Activity date is counting "from this date".</Value>
+    <Value>Abandoned cart � You can set custom reminder to customers who left their carts without confirming order. Activity date is counting "from this date".</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text2">
-    <Value>Registered customer – You can set custom reminder to customers who just register in your store. Activity date is counting from this date.</Value>
+    <Value>Registered customer � You can set custom reminder to customers who just register in your store. Activity date is counting from this date.</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text3">
-    <Value>Last purchase – You can set custom reminder to customers who made last purchase to specified date. Activity date is counting "to this date"</Value>
+    <Value>Last purchase � You can set custom reminder to customers who made last purchase to specified date. Activity date is counting "to this date"</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text4">
-    <Value>Last activity – You can set custom reminder to customers who made last activity to specified date. Activity date is counting "to this date".</Value>
+    <Value>Last activity � You can set custom reminder to customers who made last activity to specified date. Activity date is counting "to this date".</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text5">
-    <Value>Birthday – You can set custom reminder related to customers birthday (field Activity date is not used).</Value>
+    <Value>Birthday � You can set custom reminder related to customers birthday (field Activity date is not used).</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text6">
-    <Value>Completed order – You can set custom reminder related to completed order (Activity date is counting from this order date).</Value>
+    <Value>Completed order � You can set custom reminder related to completed order (Activity date is counting from this order date).</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.text7">
-    <Value>Unpaid order – You can set custom reminder related to unpaid order (Activity date is counting from this order date).</Value>
+    <Value>Unpaid order � You can set custom reminder related to unpaid order (Activity date is counting from this order date).</Value>
   </LocaleResource>
   <LocaleResource Name="admin.customers.customerreminder.updated">
     <Value>Reminder updated</Value>
@@ -18197,7 +18203,7 @@
     <Value>Rounding with 1.00 intervals (1.01-1.49 round to 1.00, 1.50-1.99 round to 2.00)</Value>
   </LocaleResource>
   <LocaleResource Name="Enums.Grand.Domain.Directory.RoundingType.Rounding1Up">
-    <Value>Rounding up with 1.00 intervals (1.01–1.99 round to 2.00)</Value>
+    <Value>Rounding up with 1.00 intervals (1.01�1.99 round to 2.00)</Value>
   </LocaleResource>
   <LocaleResource Name="Enums.Grand.Domain.Discounts.DiscountLimitationType.NTimesOnly">
     <Value>N times only</Value>
@@ -20020,7 +20026,7 @@
   <LocaleResource Name="Products.Tags">
     <Value>Product tags</Value>
   </LocaleResource>
-  <LocaleResource Name="Products.Tags.All">
+  <LocaleResource Name="Products.Test">`r`n    <Value>Test</Value>`r`n  </LocaleResource>`r`n  <LocaleResource Name="Products.Tags.All">
     <Value>All product tags</Value>
   </LocaleResource>
   <LocaleResource Name="Products.Tags.Count">
