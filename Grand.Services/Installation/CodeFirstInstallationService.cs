@@ -112,6 +112,7 @@ namespace Grand.Services.Installation
         private readonly IRepository<CategoryTemplate> _categoryTemplateRepository;
         private readonly IRepository<ManufacturerTemplate> _manufacturerTemplateRepository;
         private readonly IRepository<TopicTemplate> _topicTemplateRepository;
+        private readonly IRepository<GalleryTemplate> _galleryTemplateRepository;
         private readonly IRepository<ScheduleTask> _scheduleTaskRepository;
         private readonly IRepository<RewardPointsHistory> _rewardpointshistoryRepository;
         private readonly IRepository<SearchTerm> _searchtermRepository;
@@ -200,6 +201,7 @@ namespace Grand.Services.Installation
             _categoryTemplateRepository = serviceProvider.GetRequiredService<IRepository<CategoryTemplate>>();
             _manufacturerTemplateRepository = serviceProvider.GetRequiredService<IRepository<ManufacturerTemplate>>();
             _topicTemplateRepository = serviceProvider.GetRequiredService<IRepository<TopicTemplate>>();
+            _galleryTemplateRepository = serviceProvider.GetRequiredService<IRepository<GalleryTemplate>>();
             _scheduleTaskRepository = serviceProvider.GetRequiredService<IRepository<ScheduleTask>>();
             _returnRequestRepository = serviceProvider.GetRequiredService<IRepository<ReturnRequest>>();
             _returnRequestNoteRepository = serviceProvider.GetRequiredService<IRepository<ReturnRequestNote>>();

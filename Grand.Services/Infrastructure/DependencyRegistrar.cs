@@ -194,6 +194,10 @@ namespace Grand.Services.Infrastructure
             serviceCollection.AddScoped<IInventoryManageService, InventoryManageService>();
             serviceCollection.AddScoped<IPriceCalculationService, PriceCalculationService>();
             serviceCollection.AddScoped<IOrderTagService, OrderTagService>();
+            
+            // Gallery services
+            serviceCollection.AddScoped<IGalleryService, GalleryService>();
+            serviceCollection.AddScoped<IGalleryTemplateService, GalleryTemplateService>();
 
         }
 

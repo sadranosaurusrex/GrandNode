@@ -20026,7 +20026,10 @@
   <LocaleResource Name="Products.Tags">
     <Value>Product tags</Value>
   </LocaleResource>
-  <LocaleResource Name="Products.Test">`r`n    <Value>Test</Value>`r`n  </LocaleResource>`r`n  <LocaleResource Name="Products.Tags.All">
+  <LocaleResource Name="Products.Test">
+    <Value>Test</Value>
+  </LocaleResource>
+  <LocaleResource Name="Products.Tags.All">
     <Value>All product tags</Value>
   </LocaleResource>
   <LocaleResource Name="Products.Tags.Count">
