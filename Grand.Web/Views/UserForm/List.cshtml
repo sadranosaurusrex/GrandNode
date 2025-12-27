@@ -1,0 +1,41 @@
+@model IList<UserForm>
+@{
+    Layout = "_ColumnsTwo";
+    ViewBag.Title = "Submitted Forms";
+}
+
+<div class="page user-form-list-page">
+    <div class="page-title">
+        <h1>@ViewBag.Title</h1>
+    </div>
+    <div class="page-body">
+        @if (Model.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var form in Model)
+                    {
+                        <tr>
+                            <td>@form.Name</td>
+                            <td>@form.Email</td>
+                            <td>@form.Message</td>
+                            <td>@form.CreatedOnUtc.ToString("yyyy-MM-dd HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No forms submitted yet.</p>
+        }
+    </div>
+</div>
